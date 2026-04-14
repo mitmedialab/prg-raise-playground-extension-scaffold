@@ -1,1 +1,0 @@
-# prg-raise-playground-extension-scaffold
