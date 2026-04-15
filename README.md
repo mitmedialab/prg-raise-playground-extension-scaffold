@@ -11,6 +11,8 @@
     - vm extension loader: should  
     - gui extension menu: must be updated to read some file that lists all available extension zips (e.g. `extensions.json`), and then load the details for each extension from the zip file itself (e.g. from `details.json` inside the zip)
     - NOTE: This can be implemented ON TOP of the current system, so that we can incrementally update things
+- `dev` script server could do something cool where it uses the DEPLOYED version of the scratch site for the majority of the file serving, which would massively shrink the package size we need to distribute for development. For the files that need to change based on the extension development environment (e.g. `extensions.json`), the server handles those correctly. 
+  - NOTE for future: this does require internet access, so we might want a fallback that can use a locally cached version of the site. Also see below about supporting local versions of the scratch packages, which would also solve this problem.
 
 # It SHOULD BE possible...
 
@@ -36,3 +38,4 @@
       - scratch-gui/*
       - scratch-vm/*
   - NOTE: In this case, we should actually leverage the webpack dev-server for the scratch side so that as we make changes to the vm or the gui, things reload
+  - NOTE 2: If we end up `git subrepo` cloning extension repos into the base scratch repo, we might want to be careful about `git subrepo` cloning the scratch repo back into the extension repo, which would just be a lot of duplicate files (but maybe not the biggest deal)
