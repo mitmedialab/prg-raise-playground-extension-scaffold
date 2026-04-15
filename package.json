@@ -1,1 +1,9 @@
-
+{
+  "scripts": {
+    "dev": "@raise-mit/playground-extension dev",
+    "build": "@raise-mit/playground-extension build"
+  },
+  "dependencies": {
+    "@raise-mit/playground-extension": "^1.0.0"
+  }
+}
