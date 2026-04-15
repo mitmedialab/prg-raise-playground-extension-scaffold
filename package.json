@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "@raise-mit/playground-extension dev",
+    "dev": "@raise-mit/playground-extension dev", // node ./node_modules/.bin/@raise-mit/playground-extension/cli.js -- dev
     "build": "@raise-mit/playground-extension build"
   },
   "dependencies": {
