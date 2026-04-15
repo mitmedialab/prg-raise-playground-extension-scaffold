@@ -1,3 +1,8 @@
+# Files
+
+- `extension.ts` what previously used to be `index.ts`
+- `details.ts` kind of behaves like vite's `vite.config.ts` file, where it is a typescript file that is expected to be executed locally to undertsand the 'config' of your system. Results in the production of `details.json` file that determines the extension menu display information of an extension
+
 # Some new ideas
 
 - `build` script should produce a zip archive that contains the following files: `extension.js`, `details.json` (and could optionally have an `auxiliary.js` file for things like any bundled UI elements)
