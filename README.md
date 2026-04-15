@@ -43,7 +43,7 @@
 # It SHOULD BE possible...
 
 - to co-develop extensions, i.e. we might have a repo that has multiple extensions co-located. The file structure might look like:
-- doodlebot/
+- doodlebot-raise-playground-extensions/
   - package.json
   - basic/
     - extension.ts
